@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment #1 - JavaScript</title>
+</head>
+<body>
+    <h2>Assignment #1 - JavaScript</h2>
+    <p>โปรแกรมนี้จะรับ input จากผู้ใช้ และตรวจสอบว่าเป็นเลขคู่ เลขคี่ หรือศูนย์</p>
+
+    <button onclick="checkNumber()">Start Program</button>
+
+    <script>
+        function checkNumber() {
+            let input = prompt("Input integer number");
+
+            let number = parseInt(input);
+
+            if (number === 0) {
+                alert("zero integer number");
+            } else if (number % 2 === 0) {
+                alert("even integer number");
+            } else {
+                alert("odd integer number");
+            }
+        }
+    </script>
+</body>
+</html>
